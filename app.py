@@ -9,7 +9,11 @@ def home():
 '''
 # Routing for your application.
 # Put your routes below this comment
-'''
+''' 
+
+@app.route('/about')
+def about():
+    return render_template('about.html')
 
 
 @app.errorhandler(404)
