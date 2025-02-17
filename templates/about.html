@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8">
- <title>My Website - About</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}" />
+    <meta charset="UTF-8">
+    <title>My Website - About</title>
 </head>
 <body>
- <h1>Shantay Kellyman</h1>
- <p>I am a creative individual passionate about marketing and web development. I enjoy learning new skills, dancing, and going to the movies.</p>
+    <div class="container">
+        <img src="{{ url_for('static', filename='images/profile.jpeg') }}" alt="Shantay Kellyman" class="profile-img">
+        <h1>Shantay Kellyman</h1>
+        <p>I am a creative individual passionate about marketing and web development. I enjoy learning new skills, dancing, and going to the movies.</p>
+    </div>
 </body>
 </html>
